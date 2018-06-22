@@ -1,0 +1,319 @@
+
+
+
+
+body {
+    background-color: #f3f3f3;
+    min-height: 100vh;
+    font-family:'Signika', sans-serif ;
+}
+
+/* menu*/
+nav{
+    
+    background-color:rgb(30, 30, 31); 
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+   }
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li {text-align:center;
+    flex: 3;  
+}
+
+a{
+    font-weight: 300;
+    color: rgb(233, 233, 233);
+}
+a:hover{
+    color: rgb(214, 214, 214);
+}
+
+.disabled{
+   font-weight: 700 !important;
+   color: white !important;
+}
+
+a:focus{
+    color:white;
+}
+
+
+/* kontener*/
+.form-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 90vh;
+    padding: 30px;
+}
+
+h1 {
+    font-family:'Dancing Script';
+    font-size: 72px;
+    text-align: center;
+}
+
+/* stopka*/
+.stopka-container{
+    margin-top: 15px;
+    color: rgb(136, 136, 136);
+    height: 100%;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+
+/* HOME*/
+.opis {
+    margin-top: 30px;
+    font-size: 22px; 
+    line-height: 33px;
+}
+
+.slider {
+    height: 45vh ;
+    width: 90%;
+
+
+}
+#slides{
+  position: relative;
+}
+
+.owoc {width: 90%;
+    height:45vh; 
+    display: block;
+    background-position: 110px, center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jagoda { 
+    background-image: url(image/34.jpg)
+}
+
+.malina {
+    background-image: url(image/31a.jpg);
+}
+
+.poziomka {
+    background-image: url(image/34c.jpg);
+}  
+
+
+.jezyna {
+    background-image: url(image/33.jpg);
+}  
+
+
+.slide{
+width: 100%;
+
+background-color:rgb(255, 255, 255);  
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+/* WLASCIWOSCI*/
+
+.właściwości{
+    padding-top: 40px;
+    font-size: 22px; 
+    font-family: 'Signika', sans-serif;
+    line-height: 35px;
+}
+
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 10px 0 0 0;
+	padding: 15px 15px 15px 15px;
+
+}
+.ui-accordion .ui-accordion-content {
+	padding: 15px 30px;
+	border-top: 0;
+	overflow: auto;
+}
+
+.wszystkie {
+    margin-top: 30px;
+    width: 100%;
+    height:30vh; 
+    display: block;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(image/34a.jpg);
+}  
+
+
+.OwoceMale{
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin-top:50px; 
+    margin-bottom: 30px
+    
+}
+
+
+/* INSPIRACJE*/
+/* galeria*/
+.tz-gallery {
+    padding-top: 50px;
+}
+
+.tz-gallery .row > div {
+    padding: 8px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 3px;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'FontAwesome';
+    content: '\f18c';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(255, 50, 101, 0.76);
+    border-radius: 3px;
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+/* KONTAKT*/
+/* formularz*/
+hr {border-color:rgb(0, 0, 0);
+    margin-top:20px;
+    margin-bottom:20px; }
+    
+    .dwa{
+        border-color:rgba(0, 0, 0, 0.15);
+        margin-top:20px;
+        margin-bottom:20px;
+        ;
+    }
+    
+    h1 {
+        font-family:'Dancing Script';
+        font-size: 72px;
+        text-align: center;
+    }
+    
+    
+    .radio{
+        display: inline;
+        margin-right: 20px;
+    }
+
+
+    input[type="button"],
+input[type="button"]:hover,
+input[type="button"]:focus{
+
+    background-color:rgba(233, 6, 74, 0.945);
+    border-color:rgba(233, 6, 74, 0.945);
+    color: white;
+}
+
+
+.btn:disabled{
+    color: white;
+    background-color:rgba(107, 107, 107, 0.945) !important;
+    border-color:rgba(107, 107, 107, 0.945) !important;
+}
+
+
+form input:first-child {
+  border-top: 1px solid #ccc;
+}
+
+
+
+/* modal*/
+.btn, .btn:hover, .btn:focus, .btn:active {
+    background-color:rgba(233, 6, 74, 0.945) !important;
+    border-color:rgba(233, 6, 74, 0.945) !important;
+}
+
+
+
+@media all and (max-width: 1000px) {
+    ul {flex-wrap:wrap;}
+    li {flex:1 1 calc(50% - 20px);}
+    .slider { height: 30vh ;}
+    .owoc {height: 30vh;
+        background-position: center, center;}
+    }
+    
+
+@media all and (max-width: 420px) {
+    ul {flex-wrap:wrap;}
+    li {flex:1 1 calc(100% - 20px);}
+    .slider { height: 20vh ;}
+    .owoc {height: 20vh;
+        background-position: center, center;}
+    h1 {
+        font-family:'Dancing Script';
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
